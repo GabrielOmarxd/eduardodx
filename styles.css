@@ -10,12 +10,12 @@ body {
     text-align: center;
     padding: 20px; /* Reduce el relleno para dispositivos móviles */
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px; /* Reduce el radio de borde */
-    margin: 10px; /* Reduce el margen para dispositivos móviles */
+    border-radius: 20px; 
+    margin: 10px; 
 }
 
 header h1 {
-    font-size: 2em; /* Reducir el tamaño del encabezado principal */
+    font-size: 2em;
     margin-bottom: 0.2em;
 }
 
@@ -49,6 +49,7 @@ button {
     margin-top: 15px;
     border-radius: 15px; /* Reducir el radio de borde */
     transition: background-color 0.3s;
+    background-color: #ff6600;
 }
 
 button:hover {

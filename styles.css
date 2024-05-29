@@ -8,10 +8,10 @@ body {
 
 .container {
     text-align: center;
-    padding: 20px; /* Reduce el relleno para dispositivos móviles */
+    padding: 2px; /* Reduce el relleno para dispositivos móviles */
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px; 
-    margin: 10px; 
+    border-radius: 100px; 
+    margin: 113px; 
 }
 
 header h1 {
@@ -44,6 +44,7 @@ header h2 {
 }
 
 button {
+    color: white;
     font-size: 1em; /* Reducir el tamaño de la fuente */
     padding: 8px 15px; /* Reducir el relleno */
     margin-top: 15px;

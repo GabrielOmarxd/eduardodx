@@ -8,10 +8,10 @@ body {
 
 .container {
     text-align: center;
-    padding: 2px; /* Reduce el relleno para dispositivos móviles */
+    padding: 20px; /* Reduce el relleno para dispositivos móviles */
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 100px; 
-    margin: 113px; 
+    border-radius: 50px; /* Reduce el radio de borde */
+    margin: 10px; /* Reduce el margen para dispositivos móviles */
 }
 
 header h1 {

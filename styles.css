@@ -8,36 +8,35 @@ body {
 
 .container {
     text-align: center;
-    padding: 55px;
+    padding: 20px; /* Reduce el relleno para dispositivos móviles */
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 100px;
-    margin: 40px;
+    border-radius: 20px; /* Reduce el radio de borde */
+    margin: 10px; /* Reduce el margen para dispositivos móviles */
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2em; /* Reducir el tamaño del encabezado principal */
     margin-bottom: 0.2em;
 }
 
 header h2 {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Reducir el tamaño del encabezado secundario */
     margin-bottom: 1em;
 }
 
 .info {
     text-align: left;
-    display: inline-block;
-    max-width: 750px;
+    max-width: 90%; /* Reducir el ancho máximo */
     margin: 0 auto;
 }
 
 .info p, .info ul {
-    font-size: 1.2em;
-    margin: 20px 0;
+    font-size: 1em; /* Reducir el tamaño de la fuente */
+    margin: 15px 0; /* Ajustar el margen */
 }
 
 .info ul {
-    padding-left: 20px;
+    padding-left: 15px; /* Ajustar el relleno izquierdo */
 }
 
 .info li {
@@ -45,17 +44,28 @@ header h2 {
 }
 
 button {
-    font-size: 1.2em;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
+    font-size: 1em; /* Reducir el tamaño de la fuente */
+    padding: 8px 15px; /* Reducir el relleno */
+    margin-top: 15px;
+    border-radius: 15px; /* Reducir el radio de borde */
     transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #ff3300;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    header h2 {
+        font-size: 1em;
+    }
+    
+    .info {
+        max-width: 100%;
+    }
 }

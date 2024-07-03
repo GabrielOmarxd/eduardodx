@@ -8,35 +8,36 @@ body {
 
 .container {
     text-align: center;
-    padding: 20px; /* Reduce el relleno para dispositivos móviles */
+    padding: 55px;
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 50px; /* Reduce el radio de borde */
-    margin: 10px; /* Reduce el margen para dispositivos móviles */
+    border-radius: 100px;
+    margin: 40px;
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 0.2em;
 }
 
 header h2 {
-    font-size: 1.2em; /* Reducir el tamaño del encabezado secundario */
+    font-size: 1.5em;
     margin-bottom: 1em;
 }
 
 .info {
     text-align: left;
-    max-width: 90%; /* Reducir el ancho máximo */
+    display: inline-block;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .info p, .info ul {
-    font-size: 1em; /* Reducir el tamaño de la fuente */
-    margin: 15px 0; /* Ajustar el margen */
+    font-size: 1.2em;
+    margin: 20px 0;
 }
 
 .info ul {
-    padding-left: 15px; /* Ajustar el relleno izquierdo */
+    padding-left: 20px;
 }
 
 .info li {
@@ -44,30 +45,29 @@ header h2 {
 }
 
 button {
-    color: white;
-    font-size: 1em; /* Reducir el tamaño de la fuente */
-    padding: 8px 15px; /* Reducir el relleno */
-    margin-top: 15px;
-    border-radius: 15px; /* Reducir el radio de borde */
-    transition: background-color 0.3s;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 20px;
     background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #ff3300;
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-    
-    header h2 {
-        font-size: 1em;
-    }
-    
-    .info {
-        max-width: 100%;
-    }
+#loadingIndicator {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 102, 0, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1000;
 }

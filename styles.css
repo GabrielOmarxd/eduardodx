@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;   
+    font-family: 'Arial', sans-serif;
     background: url('img/japanese_cherry_blossom.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
@@ -8,32 +8,34 @@ body {
 
 .container {
     text-align: center;
-    padding: 55px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 100px;
-    margin: 40px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin: 20px;
+    max-width: 90%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 0.2em;
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
 header h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 1em;
 }
 
 .info {
     text-align: left;
     display: inline-block;
-    max-width: 750px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .info p, .info ul {
-    font-size: 1.2em;
-    margin: 20px 0;
+    font-size: 1em;
+    margin: 15px 0;
 }
 
 .info ul {
@@ -45,7 +47,7 @@ header h2 {
 }
 
 button {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 10px 20px;
     margin-top: 20px;
     background-color: #ff6600;
@@ -53,11 +55,13 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
     background-color: #ff3300;
+    transform: scale(1.05);
 }
 
 #loadingIndicator {
@@ -70,4 +74,48 @@ button:hover {
     padding: 20px;
     border-radius: 20px;
     z-index: 1000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    .info p, .info ul {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 0.9em;
+    }
+
+    .info p, .info ul {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
 }

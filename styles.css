@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;   
     background: url('img/japanese_cherry_blossom.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
@@ -8,11 +8,11 @@ body {
 
 .container {
     text-align: center;
-    padding: 25px;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 90%;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -22,14 +22,14 @@ header h1 {
 }
 
 header h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 1em;
 }
 
 .info {
     text-align: left;
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -79,12 +79,17 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        margin: 15px auto;
+    }
+
     header h1 {
         font-size: 2em;
     }
 
     header h2 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .info p, .info ul {
@@ -99,8 +104,8 @@ button:hover {
 
 @media (max-width: 480px) {
     .container {
-        padding: 15px;
-        margin: 10px;
+        padding: 20px;
+        margin: 10px auto;
         border-radius: 10px;
     }
 
@@ -109,7 +114,7 @@ button:hover {
     }
 
     header h2 {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .info p, .info ul {

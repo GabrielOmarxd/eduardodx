@@ -11,30 +11,31 @@ body {
     padding: 25px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
-    margin: 20px;
-    max-width: 90%;
+    margin: 20px auto;
+    max-width: 800px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
 header h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 1em;
 }
 
 .info {
     text-align: left;
-    display: inline-block;
-    max-width: 90%;
+    display: block;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .info p, .info ul {
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 15px 0;
 }
 
@@ -47,7 +48,7 @@ header h2 {
 }
 
 button {
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 10px 20px;
     margin-top: 20px;
     background-color: #ff6600;
@@ -79,7 +80,32 @@ button:hover {
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.8em;
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .info p, .info ul {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
     }
 
     header h2 {
@@ -92,30 +118,6 @@ button:hover {
 
     button {
         font-size: 0.9em;
-        padding: 8px 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-        margin: 10px;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header h2 {
-        font-size: 0.9em;
-    }
-
-    .info p, .info ul {
-        font-size: 0.8em;
-    }
-
-    button {
-        font-size: 0.8em;
         padding: 6px 12px;
     }
 }
